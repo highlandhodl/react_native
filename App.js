@@ -1,18 +1,15 @@
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import WelcomeScreen from "./src/screens/WelcomeScreen";
-import BitcoinComponent from "./src/screens/BitcoinComponent";
-import BitcoinerListComponent from "./src/screens/BitcoinerListComponent";
-
+import MyFavouriteBitcoiners from "./src/screens/MyFavouriteBitcoiners";
 
 const navigator = createStackNavigator(
   {
     Welcome: WelcomeScreen,
-    Bitcoin: BitcoinComponent,
-    Bitcoiners: BitcoinerListComponent
+    Bitcoiners: MyFavouriteBitcoiners
   },
   {
-    initialRouteName: "Welcome",
+    initialRouteName: "Bitcoiners",
     defaultNavigationOptions: {
       title: "App",
     },
