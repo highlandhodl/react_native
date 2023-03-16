@@ -14,7 +14,7 @@ const WelcomeScreen = props => {
         title="Navigate to Bitcoin Screen"
         onPress={() => props.navigation.navigate("Bitcoin")}
       />
-      <TouchableOpacity onPress={() => props.navigation.navigate('Bitcoiners')}>
+      <TouchableOpacity onPress={() => props.navigation.navigate('Navigate To Bitcoiners Screen')}>
         <View>
           <Text>TouchableOpacity button</Text>
         </View>
