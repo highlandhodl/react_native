@@ -1,15 +1,16 @@
 import React from "react";
-import { Text, StyleSheet, View} from "react-native";
+import { Text, StyleSheet, View, Image} from "react-native";
 
-// Step 1: Create a new OGBitcoiner component in a new folder called components. This will house reusable OGBitcoiner components.
-// Step 2: Give the OGBitcoiner component a prop called bitcoinerName
-// Step 3: Use the bitcoinerName prop to display
-// Step 4: Import the OGBitcoiner component into MyFavouriteBitcoiners.js
+// Step 1: Add images to the assets folder 
+// Step 2: Add an image component to the OGBitcoiner component
+// Step 3: The source of the image component should be a prop called bitcoinerImage that is passed in from MyFavouriteBitcoiners.js
+// Step 4: Style the image component to be 100px by 100px or any size you would like
 const OGBitcoiner = props => {
     return (
         <>
             <View>
                 <Text>{props.bitcoinerName}</Text>
+                <Image style={styles.imageSize} source={props.bitcoinerImage} />
             </View>
         </>
     );
@@ -19,6 +20,10 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 30,
     },
+    imageSize: {
+        width: 100,
+        height: 100,
+    }
 });
 
 export default OGBitcoiner;
