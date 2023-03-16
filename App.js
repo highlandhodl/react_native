@@ -4,6 +4,7 @@ import WelcomeScreen from "./src/screens/WelcomeScreen";
 import BitcoinComponent from "./src/screens/BitcoinComponent";
 import BitcoinerListComponent from "./src/screens/BitcoinerListComponent";
 
+//change intialRouteName to Welcome to see WelcomeScreen
 const navigator = createStackNavigator(
   {
     Welcome: WelcomeScreen,
@@ -11,7 +12,7 @@ const navigator = createStackNavigator(
     Bitcoiners: BitcoinerListComponent
   },
   {
-    initialRouteName: "Bitcoiners",
+    initialRouteName: "Welcome",
     defaultNavigationOptions: {
       title: "App",
     },
