@@ -1,1 +1,1 @@
-Guide in LMS: https://www.boredtocoder.com/topics/hello-bitcoin/ & comments within lab
+Guide in LMS: https://www.boredtocoder.com/topics/boilerplate/ & comments within lab
